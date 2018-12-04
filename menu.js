@@ -4,7 +4,7 @@ var spacePressed = false;
 
 window.onload = function start() {
   menu = document.getElementById("menuCanvas");
-  menuContext = canvas.getContext("2d");
+  menuContext = menu.getContext("2d");
   setInterval(function(){main()}, 4);
 }
 
@@ -14,16 +14,16 @@ function main() {
 }
 
 function menuTitle() {
-  canvasContext.fillStyle = "#153ba0";
-  canvasContext.fillRect(0,0, canvas.width, canvas.height);
-  menuContext.fillStyle "#ECF0F1";
+  menuContext.fillStyle = "#153ba0";
+  menuContext.fillRect(0,0, menu.width, menu.height);
+  menuContext.fillStyle = "#ECF0F1";
   menuContext.font = "50px Times New Roman";
   menuContext.fillText("Press Space to Start", 50, 375);
 }
 
 function pressStart() {
   if(spacePressed) {
-    window.location = "script.js";
+    window.location = "game.html";
   }
 }
 

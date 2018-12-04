@@ -26,7 +26,7 @@ function main() {
 }
 
 function movement() {
-    if(ballx + 40 >= paddlex && ballx +40 <= paddlex + 170 && bally + 40 >= paddley) {
+  if(ballx + 40 >= paddlex && ballx +40 <= paddlex + 170 && bally + 40 >= paddley && bally + 45 <= paddley) {
     movementy *= -1;
     score += 10;
   }
