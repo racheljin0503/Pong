@@ -34,7 +34,7 @@ function movement() {
   bally += movementy;
   if(ballx >= 560 || ballx <= 0) {
     movementx *= -1;
-  }
+  } 
   if(bally <= 0 || bally >= 560) {
     movementy *= -1;
   }
